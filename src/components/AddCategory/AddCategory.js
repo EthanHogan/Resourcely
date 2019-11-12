@@ -2,17 +2,30 @@ import React from 'react';
 import style from './AddCategory.module.css';
 
 
-function AddCategory( { toggle }) {
+function AddCategory( { toggle, setAddingCategoryToggle }) {
+
+  function handleClick(event) {
+    setAddingCategoryToggle(true);
+  }
+
+  function handleEnter(event) {
+    if (event.key === 'Enter') {
+      setAddingCategoryToggle(true);
+    }
+  }
+
+
+
   if (toggle) {
     return (
-      <div className={style.empty}>
+      <div>
         
       </div>
     );
   }
   return (
     <div className={style.AddCategory}>
-      <button>Add new category +</button>
+      <button onKeyDown={handleEnter} onClick={handleClick}>Add new category +</button>
     </div>
   );
 }
