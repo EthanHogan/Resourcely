@@ -78,9 +78,11 @@ function App() {
         <div className={`${style.top} ${style.container}`}>
           <AddResource />
         </div>
-        <div className={`${style.bottom} ${style.container}`}>
+
+        {/* coming soon! */}
+        {/* <div className={`${style.bottom} ${style.container}`}>
           <RecentResources />
-        </div>
+        </div> */}
       </div>
      </div>
     </div>

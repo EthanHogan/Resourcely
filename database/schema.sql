@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS Users;
+DROP TABLE IF EXISTS Categories;
+DROP TABLE IF EXISTS Resources;
+
+CREATE TABLE Users(
+  id INT AUTO_INCREMENT,
+  username VARCHAR(20) NOT NULL,
+  password VARCHAR(20) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE Categories(
+  id INT AUTO_INCREMENT,
+  name VARCHAR(20) NOT NULL,
+  user_fk INTEGER NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE Resources(
+  id INT AUTO_INCREMENT,
+  title VARCHAR(70) NOT NULL,
+  description VARCHAR(140),
+  link VARCHAR(1000) NOT NULL,
+  PRIMARY KEY (id)
+);
