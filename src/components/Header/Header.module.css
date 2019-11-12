@@ -10,12 +10,12 @@
 .Header h1 {
   color: #ffffff;
   font-size: 36px;
-  padding-left: 3%;
+  margin-left: 4%;
 }
 
 .Header h2 {
   color: #ffffff;
-  padding-right: 3%;
-  padding-top: 0.5%;
+  margin-top: 0.5%;
+  margin-right: 3%;
   font-size: 30px;
 }

@@ -1,6 +1,18 @@
-.Category {
+button.Category {
+  width: 100%;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   padding: 2% 0%;
-  color: #605D5D
+  color: #605D5D;
+  cursor: pointer;
+  height: 3.3%;
 }
 
 .style1 {
@@ -10,4 +22,6 @@
 .style2 {
   background-color: #f9f9f9;
 }
+
+
 

@@ -1,5 +1,17 @@
 .AddCategory {
   border: 0px;
+  height: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty {
+  border: 0px;
+  height: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .AddCategory button {
@@ -17,7 +29,6 @@
               transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-bottom: 5%;
 }
 
 

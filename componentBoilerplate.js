@@ -1,9 +1,9 @@
 import React from 'react';
-import './TODO.css';
+import style from './TODO.module.css';
 
 function TODO() {
   return (
-    <div className="TODO">
+    <div className={style.TODO}>
       TODO!
     </div>
   );

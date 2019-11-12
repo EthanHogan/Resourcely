@@ -9,7 +9,7 @@ import RecentResources from './components/RecentResources/RecentResources.js';
 function App() {
 
   const [categories, setCategories ] = useState(['CSS', 'TDD', 'Redux', 'React', 'JavaScript', 'System Design', 'MongoDB'])
-
+  let currentCategory = categories[0];
   return (
     <div className={style.App}>
       <div className={style.Head}>
@@ -20,7 +20,7 @@ function App() {
         <Categories categories={categories.slice(1)}/>
       </div>
       <div className={`${style.middle} ${style.container}`}>
-        <h1>{categories[0]}</h1>
+        <h1>{currentCategory}</h1>
         <ResourceTiles />
       </div>
       <div className={`${style.right} ${style.container}`}>
