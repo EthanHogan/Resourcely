@@ -1,9 +1,9 @@
 import React from 'react';
-import './RecentResources.css';
+import style from './RecentResources.module.css';
 
 function RecentResources() {
   return (
-    <div className="RecentResources">
+    <div className={style.RecentResources}>
       RecentResources!
     </div>
   );

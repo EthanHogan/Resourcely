@@ -1,0 +1,13 @@
+.Categories {
+  height: 100%;
+  background-color: white;
+}
+
+.Categories h2 {
+  font-family: Futura;
+  font-weight: 400;
+  color: #605D5D;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}

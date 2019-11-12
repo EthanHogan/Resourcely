@@ -1,9 +1,9 @@
 import React from 'react';
-import './ResourceTile.css';
+import style from './ResourceTile.module.css';
 
 function ResourceTile() {
   return (
-    <div className="ResourceTile">
+    <div className={style.ResourceTile}>
       ResourceTile!
     </div>
   );

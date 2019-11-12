@@ -1,10 +1,14 @@
 import React from 'react';
-import './Categories.css';
+import style from './Categories.module.css';
+import AddCategory from '../AddCategory/AddCategory.js';
+import Category from '../Category/Category.js';
 
 function Categories() {
   return (
-    <div className="Categories">
-      Categories!
+    <div className={style.Categories}>
+      <h2>Categories</h2>
+      <AddCategory />
+      <Category />
     </div>
   );
 }

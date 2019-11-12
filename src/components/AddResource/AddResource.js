@@ -1,9 +1,9 @@
 import React from 'react';
-import './AddResource.css';
+import style from './AddResource.module.css';
 
 function AddResource() {
   return (
-    <div className="AddResource">
+    <div className={style.AddResource}>
       AddResource!
     </div>
   );

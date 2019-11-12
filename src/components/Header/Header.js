@@ -1,10 +1,11 @@
 import React from 'react';
-import './Header.css';
+import style from './Header.module.css';
 
 function Header() {
   return (
-    <div className="Header">
-      Header!
+    <div className={style.Header}>
+      <h1>Resourcely</h1>
+      <h2>Welcome, User!</h2>
     </div>
   );
 }
