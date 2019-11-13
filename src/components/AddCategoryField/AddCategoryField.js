@@ -12,11 +12,22 @@ function AddCategoryField( { toggle, addCategory } ) {
 
   function handleSubmit(event) { 
     if (event.key === 'Enter' && textField.length !== 0) {
-      addCategory(textField);
+      addCategory({
+                    name: textField,
+                    resources: []
+                  });
       setTextField('');
     }
+  }
 
-    
+  function handleClick(event) {
+    if (textField.length !== 0) {
+      addCategory({
+        name: textField,
+        resources: []
+      });
+      setTextField('');
+    }
   }
 
   // useEffect(() => {console.log(textField)})
@@ -39,7 +50,7 @@ function AddCategoryField( { toggle, addCategory } ) {
         onChange={handleChange} 
         onKeyDown={handleSubmit}>
         </input> 
-        <button type="submit" name="addCategoryButton">Add</button>
+        <button name="addCategoryButton" type="button" onClick={handleClick} onKeyDown={handleSubmit}>Add</button>
       </div>
     );
   }

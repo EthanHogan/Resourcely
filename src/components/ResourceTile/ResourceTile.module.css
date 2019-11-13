@@ -1,0 +1,22 @@
+.ResourceTile {
+  background-color: blanchedalmond;
+  border: 1px solid black;
+  border-radius: 30px;
+  height: 18.5%;
+  width: 21.2%;
+  margin: 4% 2% 1% 2%;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.ResourceTile .title {
+  margin: 10px;
+}
+
+.ResourceTile .description {
+  text-align: left;
+  font-size: 13px;
+  align-self: center;
+  margin: 0 8%;
+}
+

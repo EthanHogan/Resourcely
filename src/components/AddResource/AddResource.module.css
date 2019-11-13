@@ -1,0 +1,37 @@
+.AddResource {
+
+}
+
+.form {
+  margin-top: 10%;
+  margin-left: 15%;
+  text-align: left;
+  width: 80%;
+}
+
+.AddResource h2 {
+  margin-top: 5%;
+  font-size: 20px;
+  color: #605d5d;
+}
+
+.AddResource h3 {
+  margin: 8% 0% 3% 0%;
+  color: #646464;
+}
+
+.field {
+  width: 90%;
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: -2px 2px 3px rgb(200, 200, 200);
+}
+
+.descriptionField {
+  height: 70px;
+  width: 90%;
+}
+
+.submitButton {
+  margin-top: 10px;
+  width: 20%;
+}

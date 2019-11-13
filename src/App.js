@@ -6,54 +6,146 @@ import ResourceTiles from './components/ResourceTiles/ResourceTiles';
 import AddResource from './components/AddResource/AddResource.js';
 import RecentResources from './components/RecentResources/RecentResources.js';
 
-function App() {
 
-  const [categories, setCategories ] = useState(['CSS', 'TDD', 'Redux', 'React', 'JavaScript', 'System Design', 'MongoDB'])
+//HELPER
+export function doesCategoryExist(originalCats, newCat) {
+  let result = false;
+  originalCats.forEach((cat, index) => {
+    if (cat.name.toLowerCase() === newCat.name.toLowerCase()) {
+      result = true;
+    }
+  })
+  console.log(result);
+  return result;
+}
+
+const App = () => {
+
+  const [categories, setCategories ] = useState([
+    {
+      name: 'CSS',
+      resources: [
+        {
+          title: 'Flexbox Froggy',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm',
+          link: 'https://flexboxfroggy.com/',
+        },
+        {
+          title: 'CSS Best Practices',
+          description: '',
+          link: 'https://www.tothenew.com/blog/10-best-practices-in-css/'
+        }
+      ]
+    },
+    {
+      name: 'TDD',
+      resources: [
+        {
+          title: 'TDD 1',
+          description: 'TDD 1 Description',
+          link: 'https://flexboxfroggy.com/',
+        },
+        {
+          title: 'TDD 2',
+          description: '',
+          link: 'https://www.tothenew.com/blog/10-best-practices-in-css/'
+        },
+        {
+          title: 'TDD 3',
+          description: 'TDD 1 Description',
+          link: 'https://flexboxfroggy.com/',
+        },
+        {
+          title: 'TDD 4',
+          description: '',
+          link: 'https://www.tothenew.com/blog/10-best-practices-in-css/'
+        },
+        {
+          title: 'TDD 5',
+          description: 'TDD 1 Description',
+          link: 'https://flexboxfroggy.com/',
+        },
+        {
+          title: 'TDD 6',
+          description: '',
+          link: 'https://www.tothenew.com/blog/10-best-practices-in-css/'
+        },
+        {
+          title: 'TDD 7',
+          description: 'TDD 1 Description',
+          link: 'https://flexboxfroggy.com/',
+        },
+        {
+          title: 'TDD 8',
+          description: '',
+          link: 'https://www.tothenew.com/blog/10-best-practices-in-css/'
+        },
+        {
+          title: 'TDD 9',
+          description: '',
+          link: 'https://www.tothenew.com/blog/10-best-practices-in-css/'
+        },
+        {
+          title: 'TDD 10',
+          description: 'TDD 1 Description',
+          link: 'https://flexboxfroggy.com/',
+        },
+        {
+          title: 'TDD 11',
+          description: '',
+          link: 'https://www.tothenew.com/blog/10-best-practices-in-css/'
+        },
+        {
+          title: 'TDD 12',
+          description: '',
+          link: 'https://www.tothenew.com/blog/10-best-practices-in-css/'
+        },
+        {
+          title: 'TDD 13',
+          description: 'TDD 1 Description',
+          link: 'https://flexboxfroggy.com/',
+        },
+        {
+          title: 'TDD 14',
+          description: '',
+          link: 'https://www.tothenew.com/blog/10-best-practices-in-css/'
+        },
+        {
+          title: 'TDD 15',
+          description: '',
+          link: 'https://www.tothenew.com/blog/10-best-practices-in-css/'
+        },
+      ]
+    },
+  ])
   const [addingCategoryToggle, setAddingCategoryToggle] = useState(false);
   
   let currentCategory = categories[0];
 
 
-  function addCategory(categoryName) {
-    if (!doesCategoryExist(categoryName)) {
-      setCategories([categoryName, ...categories]);
+  function addCategory(newCategory) {
+    if (!doesCategoryExist(categories, newCategory)){
+      setCategories([newCategory, ...categories]);
       setAddingCategoryToggle(false);
     } else {
       setAddingCategoryToggle(false);
     }
   }
-
-  function doesCategoryExist(categoryName) {
-    categoryName = categoryName.toLowerCase();
-    let currentCategories = lowerCaseCategories();
-    let result = false;
-    currentCategories.forEach((category, index) => {
-      if (categoryName === category) {
-        result = true;
-      }
-    })
-    return result;
-  }
-
-  function lowerCaseCategories() {
-    let currentCategories = categories.map((category) => {
-      return category.toLowerCase();
-    })
-    return currentCategories;
-  }
-
-  function changeCategory(categoryName) {
+  
+  function changeCategory(category) {
     //find the index of categoryName in categories
-    let targetIndex = categories.indexOf(categoryName);
+    let targetIndex = categories.indexOf(category);
     // splice the name out
     categories.splice(targetIndex, 1)
-    setCategories([categoryName, ...categories])
+    setCategories([category, ...categories])
   }
 
-  // useEffect(() => console.log(categories));
-
-
-
+  function handleAddResource(resource) {
+    let copyCategories = [...categories]
+    let targetCategory = copyCategories.shift();
+    targetCategory.resources.unshift(resource);
+    setCategories([targetCategory, ...copyCategories]);
+  }
 
   return (
     <div className={style.App}>
@@ -71,12 +163,12 @@ function App() {
         />
       </div>
       <div className={`${style.middle} ${style.container}`}>
-        <h1>{currentCategory}</h1>
-        <ResourceTiles />
+        <h1>{currentCategory.name}</h1>
+        <ResourceTiles resources={currentCategory.resources}/>
       </div>
       <div className={`${style.right} ${style.container}`}>
         <div className={`${style.top} ${style.container}`}>
-          <AddResource />
+          <AddResource  handleAddResource={handleAddResource}/>
         </div>
 
         {/* coming soon! */}

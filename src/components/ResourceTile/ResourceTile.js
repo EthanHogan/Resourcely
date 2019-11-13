@@ -1,11 +1,12 @@
 import React from 'react';
 import style from './ResourceTile.module.css';
 
-function ResourceTile() {
+function ResourceTile( { resource }) {
   return (
-    <div className={style.ResourceTile}>
-      ResourceTile!
-    </div>
+    <a className={style.ResourceTile} href={resource.link} target="_blank">
+      <div className={style.title}>{resource.title}</div>
+      <p className={style.description}>{resource.description}</p>
+    </a>
   );
 }
 

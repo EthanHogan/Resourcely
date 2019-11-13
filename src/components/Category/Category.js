@@ -6,7 +6,7 @@ function Category( { category, styleType, changeCategory } ) {
 
   function handleClick(event) {
     //do something
-    changeCategory(event.target.name);
+    changeCategory(category);
   }
 
   if (styleType === 1) {
@@ -14,8 +14,8 @@ function Category( { category, styleType, changeCategory } ) {
       <button 
       className={`${style.Category} ${style.style1}`}
       onClick={handleClick}
-      name={category}>
-      {category}
+      name={category.name}>
+      {category.name}
       </button>
     );
   } else {
@@ -23,8 +23,8 @@ function Category( { category, styleType, changeCategory } ) {
       <button 
       className={`${style.Category} ${style.style2}`}
       onClick={handleClick}
-      name={category}>
-      {category}
+      name={category.name}>
+      {category.name}
       </button>
     );
   }

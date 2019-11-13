@@ -13,9 +13,9 @@ function Categories( { categories, addCategory, addingCategoryToggle, setAddingC
       {addingCategoryToggle ? (<AddCategoryField addCategory={addCategory} />) : (<div></div>)}
       {categories.map((category, index) => {
         if (index % 2 === 0) {
-          return <Category key={category} category={category} styleType={1} changeCategory={changeCategory}/>
+          return <Category key={category.name} category={category} styleType={1} changeCategory={changeCategory}/>
         } else {
-          return <Category key={category} category={category} styleType={2} changeCategory={changeCategory}/>
+          return <Category key={category.name} category={category} styleType={2} changeCategory={changeCategory}/>
         }
       })}
     </div>

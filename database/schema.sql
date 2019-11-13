@@ -21,5 +21,6 @@ CREATE TABLE Resources(
   title VARCHAR(70) NOT NULL,
   description VARCHAR(140),
   link VARCHAR(1000) NOT NULL,
+  category_fk INT,
   PRIMARY KEY (id)
 );
