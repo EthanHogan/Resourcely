@@ -51,22 +51,7 @@
       <td></td>
       <td class="tech">(Webpack Babel)</td>
     </tr>
-      <tr rowspan="3">
-    <td class="subheading">Testing</td>
-    <td>Chai</td>
-    <td>Mocha</td>
-    <td>Jest</td>
-    <td>Enzyme</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="subheading">APIs</td>
-    <td>Google OaUth</td>
-    <td>Google Images</td>
-    <td>TicketMaster</td>
-    <td>EventBrite</td>
-    <td>PredictHq</td>
-  </tr>
+      
 
   
   
