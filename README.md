@@ -6,16 +6,16 @@
 
 ## About
 
-*CityScout* is a responsive web app that recommends events to users based on their Google calendar availability. <br />
+*Resourcely* is a responsive web application that allows users to store and organize their url links that they want to hold on to. <br />
 
- Events can further be filtered by day selection, inputted times, and category preferences; users can then add an event to their calendar.
+ Resources are organized into user created categories and have informative titles and descriptions attached to them.
  <br />
 
-*CityScout* utilizes a SQL database that aggregates events from multiple event management sources.
+*Resourcely* utilizes a MySQL database that stores a user's categories and resources.
 
 ## Contributors
 
-[Landon Baker](https://github.com/landon-baker)
+[Ethan Hogan](https://github.com/EthanHogan)
 
 [Hadley Crowl](https://github.com/hadleyac)
 
