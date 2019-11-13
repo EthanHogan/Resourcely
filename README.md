@@ -49,7 +49,7 @@
       <td><img src='https://i2.wp.com/endlessillusoft.com/wp-content/uploads/2017/01/babel.png?w=1280' width="80" style="padding-left: 27px"><img></td>
       <td></td>
       <td></td>
-      <td class="tech">(Webpack Babel Cron-jobs)</td>
+      <td class="tech">(Webpack Babel)</td>
     </tr>
       <tr rowspan="3">
     <td class="subheading">Testing</td>
