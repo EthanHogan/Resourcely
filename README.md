@@ -61,17 +61,12 @@ Some challenges encountered while building this app:
 Developed the following user stories to track deliverables and meet the expectations of a minimum viable product within a 48 hour deadline:
 
 #### User Stories
-* As a user I should see suggestions for activities to do during my free time
-* As a user I would like to see suggestions for what to do during the next three days
-* As a user I do not want to be overwhelmed by choices on the initial visit to the page
-* As a user I want an application that integrates with my Google Calendar
-* As a user I do not want to see events that occur during times I am busy
-* As a user I should be able to click a button to add an event directly to my calendar
-* As a user I should be able to indicate my preference for what types of events I do and do not want to see
-* As a user I should be able to indicate times I am unavailable that are not already on my Google Calendar
-* As a user I should be able to reject a suggested event and be presented with a different event for that day
-* As a user I should be able to browse all events on a given day
-* As a user I should be able to browse all events available on all days
+* As a user, I want to create categories to organize my resources
+* As a user, I want to be able to navigate through my categories
+* As a user, I want to add resources to my categories
+* As a user, I want my resources to have titles and/or description labels attached to them
+* As a user, I want my resources to take me to their attached link
+* As a user, I want my categories to be sorted by most recently visited
 
 ## Minimum Viable Product (MVP)
 
