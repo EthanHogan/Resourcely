@@ -4,20 +4,10 @@ import Header from './components/Header/Header.js';
 import Categories from './components/Categories/Categories.js';
 import ResourceTiles from './components/ResourceTiles/ResourceTiles';
 import AddResource from './components/AddResource/AddResource.js';
-import RecentResources from './components/RecentResources/RecentResources.js';
+import axios from 'axios';
 
 
-//HELPER
-export function doesCategoryExist(originalCats, newCat) {
-  let result = false;
-  originalCats.forEach((cat, index) => {
-    if (cat.name.toLowerCase() === newCat.name.toLowerCase()) {
-      result = true;
-    }
-  })
-  console.log(result);
-  return result;
-}
+
 
 const App = () => {
 
@@ -122,6 +112,27 @@ const App = () => {
   
   let currentCategory = categories[0];
 
+// use this for development
+  useEffect(() => {
+    axios({
+      method: 'get',
+      url: 'http://localhost:3007/all'
+    })
+    .then(response => {
+      console.log(response.data)
+      setCategories(response.data)
+    })
+  },[])
+
+// use this for production
+  // useEffect(() => {
+  //   axios('/all')
+  //   .then(response => {
+  //     console.log(response.data)
+  //     setCategories(response.data)
+  //   })
+  // }, [])
+
 
   function addCategory(newCategory) {
     if (!doesCategoryExist(categories, newCategory)){
@@ -131,6 +142,10 @@ const App = () => {
       setAddingCategoryToggle(false);
     }
   }
+
+  // function postCategory(newCategory) {
+  //   axios
+  // }
   
   function changeCategory(category) {
     //find the index of categoryName in categories
@@ -182,3 +197,16 @@ const App = () => {
 }
 
 export default App;
+
+
+//HELPER
+export function doesCategoryExist(originalCats, newCat) {
+  let result = false;
+  originalCats.forEach((cat, index) => {
+    if (cat.name.toLowerCase() === newCat.name.toLowerCase()) {
+      result = true;
+    }
+  })
+  console.log(result);
+  return result;
+}
