@@ -57,11 +57,8 @@ Some challenges encountered while building this app:
 - Chaining multiple asynchronous querys to fetch all necessary data for the applications intial request 
 - Refactoring the front end to retrieve and fetch data from the API
 
-As a team, we gained experience with large-scale SQL manipulation, with utilizing cron jobs, with cross-component Material-UI, and with building efficient data compatibility layers.
-
-
 # Client Deliverables
-Our team developed the following user stories to track deliverables and meet the expectations of our client:
+Developed the following user stories to track deliverables and meet the expectations of a minimum viable product within a 48 hour deadline:
 
 #### User Stories
 * As a user I should see suggestions for activities to do during my free time
