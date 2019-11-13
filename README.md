@@ -70,7 +70,7 @@ Developed the following user stories to track deliverables and meet the expectat
 
 ## Minimum Viable Product (MVP)
 
-The MVP of the app retrieves events from multiple APIs, and displays events which fit users' free time availability and category selection preferences. Users can choose to add an event to their calendar, to reject an event from the list, and to modify their categories in settings.
+The MVP of the application retrieves a user's categories and resources from a Node/Express API, displays those categories and resources within each. Users can freely add categories and then add resources to each category. Users add categories by supplying a category name. Users add resources by supplying a title (required), description (optional), and a link(required).
 
 ### How the App Works:
 ![GIF OF DEMO](https://media.giphy.com/media/Yq8XBJUsoPTHaFkc7p/giphy.gif)
