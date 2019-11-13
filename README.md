@@ -1,4 +1,4 @@
-# ![GIF OF DEMO](https://i.imgur.com/J2iznmk.png)
+# ![GIF OF DEMO](https://imgur.com/GN9pc1n)
 
 # <p align="center">
   <img width="800" height="500" src="https://i.imgur.com/hlvkYVt.png">
