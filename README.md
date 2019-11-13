@@ -48,10 +48,6 @@
       <td></td>
       <td class="tech">(Webpack Babel)</td>
     </tr>
-      
-
-  
-  
 </table>
 
 
