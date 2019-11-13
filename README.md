@@ -56,10 +56,10 @@
 
 
 ### Technical Challenges/Research
-Some unexpected challenges encountered while building this app:
-- Compilation conflicts with linting when using libraries such as moment.js
-- Compartmentalizing various feature builds across many developers with minimal conflict
-- Implementation of OAuth brought about interesting and unforseen challenges
+Some challenges encountered while building this app:
+- Implementing React Hooks
+- Chaining multiple asynchronous querys to fetch all necessary data for the applications intial request 
+- Refactoring the front end to retrieve and fetch data from the API
 
 As a team, we gained experience with large-scale SQL manipulation, with utilizing cron jobs, with cross-component Material-UI, and with building efficient data compatibility layers.
 
