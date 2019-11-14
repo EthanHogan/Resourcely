@@ -73,7 +73,7 @@ Developed the following user stories to track deliverables and meet the expectat
 The MVP of the application retrieves a user's categories and resources from a Node/Express API and then displays them accordingly. Users can freely add categories and then add resources to each category. Users add categories by supplying a category name. Users add resources by supplying a title (required), description (optional), and a link(required).
 
 ### How the App Works:
-![GIF OF DEMO](https://media.giphy.com/media/Yq8XBJUsoPTHaFkc7p/giphy.gif)
+![GIF OF DEMO](https://media.giphy.com/media/eMJwl7eplUWvD9u0lN/giphy.gif)
 
 ![IMG OF SCHEMA](https://raw.githubusercontent.com/hratx-blue-ocean/blue512/development/db/Schema.png)
 
