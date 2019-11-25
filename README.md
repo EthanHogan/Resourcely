@@ -57,7 +57,7 @@ Some challenges encountered while building this app:
 - Chaining multiple asynchronous querys to fetch all necessary data for the applications intial request 
 - Refactoring the front end to retrieve and fetch data from the API
 
-# Client Deliverables
+# Deliverables
 Developed the following user stories to track deliverables and meet the expectations of a minimum viable product within a 48 hour deadline:
 
 #### User Stories
@@ -75,13 +75,4 @@ The MVP of the application retrieves a user's categories and resources from a No
 ### How the App Works:
 ![GIF OF DEMO](https://media.giphy.com/media/eMJwl7eplUWvD9u0lN/giphy.gif)
 
-![IMG OF SCHEMA](https://raw.githubusercontent.com/hratx-blue-ocean/blue512/development/db/Schema.png)
-
-
-### Development Workflow
-Our team managed workflow and responsibilities by utilizing Agile methodology. [Trello](https://trello.com/b/G4xL0tnR/cityscout) was used to to keep track of tickets. All development work was specifically associated with a ticket. At any point in time the status of a ticket could be ascertained by finding it on the board. After our daily standup meeting we assessed the status of our application then updated and reassigned tickets based on workload.
-
-### Version Control and Continuous Integration
-Our team utilized git feature branch workflow to ensure our master branch always contained working code. Our master and development branches blocked direct pushes of new code. Instead, developers would create feature branches off the development branch, then create pull requests into development upon completion of that feature.
-
-All pull requests required review by another developer prior to merging new features into development. Our team utilized Travis CI for continuous integration. We integrated Travis with GitHub, allowing reviewers to easily ensure the branch they were reviewing had passed our testing suite. Pull requests with failed tests were barred from merging, and required the developer who opened the request to resolve the issue. The development branch was only merged into master after significant testing and approval by the entire team. This ensured our deployed build was never broken.
+![IMG OF SCHEMA](https://i.imgur.com/RFwlI75.png)
