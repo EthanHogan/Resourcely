@@ -78,3 +78,8 @@ The MVP of the application retrieves a user's categories and resources from a No
 ### MySQL Database Schema:
 
 ![IMG OF SCHEMA](https://i.imgur.com/RFwlI75.png)
+
+## Future Updates:
+- Adding user authentication so that multiple users can interact with the application
+- Deploying the application to make the app accessible to the web
+- Adding mobile responsiveness
