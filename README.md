@@ -72,7 +72,9 @@ Developed the following user stories to track deliverables and meet the expectat
 
 The MVP of the application retrieves a user's categories and resources from a Node/Express API and then displays them accordingly. Users can freely add categories and then add resources to each category. Users add categories by supplying a category name. Users add resources by supplying a title (required), description (optional), and a link(required).
 
-### How the App Works:
+### Demo:
 ![GIF OF DEMO](https://media.giphy.com/media/eMJwl7eplUWvD9u0lN/giphy.gif)
+
+### MySQL Database Schema:
 
 ![IMG OF SCHEMA](https://i.imgur.com/RFwlI75.png)
